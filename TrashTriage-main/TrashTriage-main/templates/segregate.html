@@ -1,0 +1,21 @@
+{% include "header.html" %}
+
+<div class="container-segregate">
+    <!-- <div id="camera"></div> -->
+    <video id="camera" autoplay playsinline></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <table id="result" cellpadding="20px" border="1" style="display: none;">
+        <tr>
+            <th>Material</th>
+            <th>Type</th>
+            <th>Recyclable</th>
+            <th>Treatment Methods</th>
+        </tr>
+    </table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
+    integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{url_for('static',filename='js/segregate.js')}}"></script>
+{% include "footer.html" %}

@@ -1,0 +1,54 @@
+<footer>
+    <div class="overlay"></div>
+    <div class="footer-content">
+      <div class="footer-head">
+        <h1>TrashTriage.</h1>
+        <p>"Promoting a greener tomorrow through innovative waste segregation solutions. <br> Together, let's create a cleaner environment for future generations. Join us in the journey towards sustainable living."</p>
+      </div>
+      <hr class="upper-hr">
+      <div class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/segregate">Let's Segregate</a>
+        <a href="/report">How much Generated</a>
+        <a href="/logout">Log Out</a>
+      </div>
+      <hr class="lower-hr">
+      <div class="footer-info">
+        <div class="info">
+          <div><box-icon color="white" name='envelope'></box-icon></div>
+          <div class="info-desc">
+            <h3>Write Up here</h3>
+            <p>sample@sample.com</p>
+          </div>
+        </div>
+        <div class="info">
+          <div><box-icon color="white" name='current-location' ></box-icon></div>
+          <div class="info-desc">
+            <h3>Address</h3>
+            <p>123, Sample Line, City, Country</p>
+          </div>
+        </div>
+        <div class="info">
+          <div><box-icon color="white" name='mobile-alt'></box-icon></div>
+          <div class="info-desc">
+            <h3>Call</h3>
+            <p>8072982399</p>
+          </div>
+        </div>
+      </div>
+      <hr class="lower-hr">
+      <p class="copyright">Copyright &copy; 2023 Recogreen</p>
+    </div>
+  </footer>
+  <script src="{{url_for('static',filename='js/index.js')}}"></script>
+    <script>
+      $(document).ready(function(){
+        $(".counter").counterUp({
+          delay:10,
+          time: 1200
+        });
+      });
+    </script>
+  
+  </body>
+  </html>

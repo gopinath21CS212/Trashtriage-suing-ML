@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.login_conatiner{
+    display:flex;
+    flex-direction: row;
+}
+.login_img{
+    position: relative;
+    width: 53.5%;
+    height: 100%;
+}
+.login_img img{
+    width: 100%;
+    height: 50%;
+}
+
+.login-sub-heading{
+    position: relative;
+    margin-left: 10%;
+    margin-top: -4%;
+    color:#015835;
+}
+
+.login-heading{
+    position: relative;
+    margin-left: 10%;
+    font-size: 3rem;
+    color:#015835;
+    text-shadow: 0 0 5px #e8a41c;
+}
+
+.login_form{
+    position: relative;
+    width: 47.5%;
+}
+
+.form_div{
+    position: relative;
+    margin: 18% 10%;
+    font-size: 1.2rem;
+}
+
+label,input{
+    margin: 2% 0;
+}
+
+input[type='text'],input[type='password']{
+    border: none;
+    padding: 2px 5px;
+    width: 40%;
+    border-bottom: 1px solid black;
+    margin-left: 5px;
+    transition: ease 0.5s;
+}
+input[type='password']{
+    margin-left: 9.3px;
+}
+
+input[type='text']:focus,input[type='password']:focus{
+    outline: none;
+}
+
+.login_button{
+    position: relative;
+    margin: 7% 0;
+    padding: 2% 27%;
+    background:#015835;
+    color: sandybrown;
+    border-radius: 8px;
+    transition: ease 0.5s;
+    cursor: pointer;
+    text-shadow: none;
+}
+.login_button:hover{
+    background: #011d12;
+    color: yellow;
+}
+
+.forgot_pass{
+    margin-left: 43%;
+    font-size: .8rem;
+}
+.form_div .register_link{
+    position: relative;
+    margin-top: -5%;
+    margin-left: 13%;
+    font-size: .9rem;
+}
+.login_a{
+    text-decoration: none;
+    color:#015835;
+}

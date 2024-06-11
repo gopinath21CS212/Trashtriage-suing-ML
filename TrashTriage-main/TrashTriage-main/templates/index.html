@@ -1,0 +1,153 @@
+{% include "header.html" %}
+<style>
+  #home {
+    height: 40rem;
+    background-image: url("{{url_for('static',filename='home.jpeg')}}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  footer {
+    background-image: url("{{url_for('static',filename='footer.jpg')}}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+<section id="home">
+  <div class="home-overlay"></div>
+  <div class="home_content">
+    <h1 class="home-heading">TrashTriage <br>-Separate the Scrap</h1>
+    <div class="link_btn">
+      <button type="button" class="register_btn" onclick="window.location.href='/segregate'">Segregate</button>
+      <button type="button" class="register_btn" onclick="window.location.href='/report'">See Report</button>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="service-div">
+    <div class="services_icon"><img src="{{url_for('static',filename='services1.png')}}" alt="" srcset=""></div>
+    <div class="services_content">
+      <h4>Automatic <br>Waste Detection</h4>
+      <p>Effortless detection through automation.</p>
+    </div>
+  </div>
+  <div class="service-div">
+    <div class="services_icon"><img src="{{url_for('static',filename='services2.png')}}" alt="" srcset=""></div>
+    <div class="services_content">
+      <h4>Know the <br>Treatment Technique</h4>
+      <p>Customizing treatment for best outcomes.</p>
+    </div>
+  </div>
+  <div class="service-div">
+    <div class="services_icon"><img src="{{url_for('static',filename='services3.png')}}" alt="" srcset=""></div>
+    <div class="services_content">
+      <h4>Take a <br>glance on generation</h4>
+      <p>Effortless report generation for clarity and analysis.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="corner_des"></div>
+  <div class="about_img">
+    <h1>Know about TrashTriage</h1>
+    <img src="{{url_for('static',filename='about.jpg')}}" alt="" srcset="">
+  </div>
+  <div class="about_content">
+    <p>
+
+      Welcome to TrashTriage – Your Waste Management Partner!
+
+      TrashTriage is dedicated to revolutionizing waste management through cutting-edge technology and innovative
+      solutions. It's mission is to provide a seamless and eco-friendly approach to waste disposal by identifying the
+      type of waste and offering tailored treatment method. <br>
+
+      <strong>Our Vision:</strong><br>
+      TrashTriage envisions a world where waste is no longer a problem, but a resource waiting to be properly utilized.
+      Our goal is to change the way we perceive waste and inspire responsible actions toward waste reduction. <br>
+
+      <strong>What We Do:</strong><br>
+      With our state-of-the-art waste detection technology, we accurately identify the type of waste you're dealing
+      with. Whether it's recyclable, organic, hazardous, or general waste, we've got you covered. We then provide you
+      with tailored treatment methods to ensure the waste is managed in the most sustainable and environmentally
+      friendly way possible. <br>
+
+      <strong>Why Choose Us:</strong><br>
+      - Accuracy: Our advanced waste detection algorithms ensure precise waste categorization. <br>
+      - Sustainability: We prioritize eco-friendly waste treatment methods to minimize environmental impact. <br>
+      - Innovation: TrashTriage is at the forefront of waste management technology, bringing you the latest solutions.
+      <br>
+      - Simplicity: Our user-friendly interface makes waste disposal hassle-free for individuals and businesses alike.
+      <br>
+
+  </div>
+</section>
+
+
+<section id="cnt">
+  <div class="count">
+    <div class="work">
+      <img src="{{url_for('static',filename='work1.jpg')}}" alt="">
+      <h3>Total Garbage Detected</h3>
+      <div class="counter">12,10,100</div>
+    </div>
+    <div class="work">
+      <img src="{{url_for('static',filename='work2.png')}}" alt="">
+      <h3>Total Garbage Segregated</h3>
+      <div class="counter">2,10,100</div>
+    </div>
+    <div class="work">
+      <img src="{{url_for('static',filename='work3.png')}}" alt="">
+      <h3>Total Garbage Recycled</h3>
+      <div class="counter">212,10,100</div>
+    </div>
+  </div>
+</section>
+
+<section id="swatch_bharat">
+  <h1>Swachh Bharat Abhiyan </h1>
+  <div class="swatch_bharat">
+    <div class="swatch_img">
+      <img src="{{url_for('static',filename='swatch.png')}}" alt="" srcset="">
+      <img src="{{url_for('static',filename='swatch2.jpg')}}" alt="" srcset="">
+    </div>
+    <div class="swatch_desc">
+      <p>
+        The Swachh Bharat Abhiyan (Clean India Mission), commonly referred to as the Swachh Bharat Mission, is a
+        cleanliness and sanitation campaign launched in India by the government. The campaign was officially launched on
+        October 2, 2014, coinciding with the birth anniversary of Mahatma Gandhi, who advocated for cleanliness and
+        sanitation.
+
+        One of the main objectives of the Swachh Bharat Mission is to ensure proper waste management, and promote waste
+        segregation across the country. The campaign aims to create a cleaner and healthier environment for all citizens
+        of India.
+
+        Key components of the Swachh Bharat Mission in terms of Waste Management include: <br>
+
+
+        1. <strong>Behavioral Change:</strong> <br> The campaign emphasizes the need for behavioral change among
+        citizens regarding sanitation and hygiene practices. It also promotes the use of proper waste disposal. <br>
+
+        2. <strong>Waste Management:</strong> <br> The mission focuses on proper waste management, including waste
+        segregation at source, recycling, and safe disposal of waste. <br>
+
+        3. <strong>Cleanliness and Hygiene:</strong> <br> The campaign seeks to promote cleanliness and hygiene
+        practices in schools, communities, public places, and workplaces. <br>
+
+        4. <strong>Public Awareness:</strong> <br> Swachh Bharat Mission aims to create awareness about the importance
+        of cleanliness and sanitation through various media campaigns, events, and programs. <br>
+
+        5. <strong>Technology and Innovation:</strong> <br> The mission also encourages the use of technology and
+        innovation to improve waste management infrastructure and monitoring the amout of waste generated. <br><br>
+
+        The Swachh Bharat Abhiyan is a part of India's broader efforts to achieve Sustainable Development Goal 6 (SDG 6)
+        set by the United Nations, which aims to ensure availability and sustainable management of water and sanitation
+        for all.
+      </p>
+    </div>
+  </div>
+</section>
+{% include "footer.html" %}
